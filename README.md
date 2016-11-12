@@ -1,5 +1,7 @@
 # no-more-media-queries
-no need for media queries with only 435 bytes of javascript
+no need for media queries with only 420 bytes of javascript
+
+
 
 ```css
 html { /* mobile, tablet, laptop and desktop */ }
