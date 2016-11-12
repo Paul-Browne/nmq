@@ -1,4 +1,4 @@
-
+/*! nmmq - no more media queries | Paul Browne | 2016 */
 
 // IIFE
 
