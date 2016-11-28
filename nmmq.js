@@ -32,7 +32,13 @@
     // kind of a mobile first approach, add another class name when breakpoint is reached
     // a more accurate naming convention would be something like tablet-and-up but, meh
     
-    if(windowWidth > 640) {
+    // 670px - basically all phones in portrait and landscape
+    // the reason it is 670px is that the iphone 6, 6s and 7 are 667px wide in landsapce
+    // It will also grab some 7 inch tablets (probably desirable)
+    // 1040 will grab most tablets (all ipads) in both portrait and landscape
+    // some really high DPI tablets (1280px), in landscape, will come under laptop
+    
+    if(windowWidth > 670) {
       screenType = " tablet";
       if(windowWidth > 1040){
         screenType += " laptop";
