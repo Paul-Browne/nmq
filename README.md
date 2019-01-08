@@ -1,7 +1,5 @@
-# no-more-media-queries
-no need for media queries with only 420 bytes of javascript
-
-
+# nmq: no media queries
+eliminate the use of media queries with only 376 bytes of javascript!
 
 ```css
 html { /* mobile, tablet, laptop and desktop */ }
