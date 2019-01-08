@@ -1,5 +1,4 @@
 /*! nmq - no media queries | Paul Browne | 2019 */
-
 !function() {
     function init() {
         var html = document.documentElement.classList;
