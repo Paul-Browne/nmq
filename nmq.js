@@ -6,7 +6,7 @@
         windowWidth > 720 ? html.add("tablet") : html.remove("tablet");
         windowWidth > 1280 ? html.add("laptop") : html.remove("laptop");
         windowWidth > 1560 ? html.add("desktop") : html.remove("desktop");
-        windowWidth > window.innerHeight ? (html.remove("portrait"),html.add("landscape")) : (html.remove("landscape"),html.add("portrait"));
+        windowWidth > window.innerHeight ? html.add("landscape") : html.remove("landscape");
     }init();
     window.addEventListener("resize", function(){
         init();
