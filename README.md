@@ -16,16 +16,16 @@ html.tablet:not(.laptop) { /* tablet */ }
 html.laptop:not(.desktop) { /* laptop */ }
 html.tablet:not(.desktop) { /* tablet and laptop */ }
 
-html.portrait { /* portrait */ }
+html:not(.landscape) { /* portrait */ }
 html.landscape { /* landscape */ }
 
-html.portrait:not(.tablet) { /* mobile in portrait */ }
+html:not(.landscape):not(.tablet) { /* mobile in portrait */ }
 html.landscape:not(.tablet) { /* mobile in landscape */ }
 
-html.portrait:not(.laptop) { /* mobile and tablet in portrait */ }
+html:not(.landscape):not(.laptop) { /* mobile and tablet in portrait */ }
 html.landscape:not(.laptop) { /* mobile and tablet in landscape */ }
 
-html.portrait.tablet:not(.laptop) { /* tablet in portrait */ }
+html.tablet:not(.landscape):not(.laptop) { /* tablet in portrait */ }
 html.landscape.tablet:not(.laptop) { /* tablet in landscape */ }
 
 html.landscape.tablet { /* tablet, laptop and desktop in landscape */ }
