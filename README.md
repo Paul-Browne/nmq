@@ -2,7 +2,7 @@
 eliminate the use of media queries with only 376 bytes of javascript!
 
 ```css
-html { /* mobile, tablet, laptop and desktop */ }
+// mobile first paradigm
 
 html.tablet { /* tablet, laptop and desktop */ }
 html.laptop { /* laptop and desktop */ }
@@ -16,17 +16,17 @@ html.tablet:not(.laptop) { /* tablet */ }
 html.laptop:not(.desktop) { /* laptop */ }
 html.tablet:not(.desktop) { /* tablet and laptop */ }
 
-html:not(.landscape) { /* portrait */ }
-html.landscape { /* landscape */ }
+html.portrait { /* portrait */ }
+html:not(.portrait) { /* landscape */ }
 
-html:not(.landscape):not(.tablet) { /* mobile in portrait */ }
-html.landscape:not(.tablet) { /* mobile in landscape */ }
+html:.portrait:not(.tablet) { /* mobile in portrait */ }
+html:not(.portrait):not(.tablet) { /* mobile in landscape */ }
 
-html:not(.landscape):not(.laptop) { /* mobile and tablet in portrait */ }
-html.landscape:not(.laptop) { /* mobile and tablet in landscape */ }
+html:.portrait:not(.laptop) { /* mobile and tablet in portrait */ }
+html:not(.portrait):not(.laptop) { /* mobile and tablet in landscape */ }
 
-html.tablet:not(.landscape):not(.laptop) { /* tablet in portrait */ }
-html.landscape.tablet:not(.laptop) { /* tablet in landscape */ }
+html.tablet.portrait:not(.laptop) { /* tablet in portrait */ }
+html:not(.portrait).tablet:not(.laptop) { /* tablet in landscape */ }
 
-html.landscape.tablet { /* tablet, laptop and desktop in landscape */ }
+html.portrait.tablet { /* tablet, laptop and desktop in portrait */ }
 ```
