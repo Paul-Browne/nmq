@@ -19,14 +19,13 @@ html.tablet:not(.desktop) { /* tablet and laptop */ }
 html.portrait { /* portrait */ }
 html:not(.portrait) { /* landscape */ }
 
-html:.portrait:not(.tablet) { /* mobile in portrait */ }
+html.portrait:not(.tablet) { /* mobile in portrait */ }
 html:not(.portrait):not(.tablet) { /* mobile in landscape */ }
 
-html:.portrait:not(.laptop) { /* mobile and tablet in portrait */ }
+html.portrait:not(.laptop) { /* mobile and tablet in portrait */ }
 html:not(.portrait):not(.laptop) { /* mobile and tablet in landscape */ }
 
-html.tablet.portrait:not(.laptop) { /* tablet in portrait */ }
+html.portrait.tablet:not(.laptop) { /* tablet in portrait */ }
 html:not(.portrait).tablet:not(.laptop) { /* tablet in landscape */ }
 
-html.portrait.tablet { /* tablet, laptop and desktop in portrait */ }
 ```
